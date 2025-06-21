@@ -1,0 +1,13 @@
+<!-- @format -->
+
+<div [formGroup]="form">
+	@switch (field.controlType) { @case ("textbox") {
+	<input
+		[type]="field.type"
+		[value]="field.value"
+		[placeholder]="field.placeholder"
+		[disabled]="field.disabled"
+		[formControlName]="field.key"
+		nz-input />
+	} }
+</div>

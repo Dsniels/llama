@@ -1,0 +1,8 @@
+<!-- @format -->
+<pre>{{fields |json}}</pre>
+<form [formGroup]="formGroup" (submit)="onSubmit()">
+	@for ( field of fields; track $index) {
+	<llama-base-field [field]="field" [form]="formGroup" />
+	}
+	<button nz-button>Send</button>
+</form>

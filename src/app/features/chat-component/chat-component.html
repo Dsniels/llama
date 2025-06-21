@@ -1,0 +1,7 @@
+<!-- @format -->
+<pre>{{field | json}}</pre>
+<p>chat-component works!</p>
+@for (message of messages; track $index) {
+<p>{{message}}</p>
+}
+<llama-base-form  [fields]="field" [Submit]="sendMessage"></llama-base-form>
